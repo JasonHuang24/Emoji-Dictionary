@@ -44,37 +44,41 @@
             </objects>
             <point key="canvasLocation" x="1425" y="133"/>
         </scene>
-        <!--View Controller-->
+        <!--Emoji DefinitionVC-->
         <scene sceneID="80o-gm-2E3">
             <objects>
-                <viewController id="WLr-1S-bHV" sceneMemberID="viewController">
+                <viewController id="WLr-1S-bHV" customClass="EmojiDefinitionVC" customModule="Emoji_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tQD-Rk-TrS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🏎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1i-DT-cO1">
-                                <rect key="frame" x="62.5" y="84" width="250" height="274.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="230"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A racecar sponsored by Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abe-1F-b3S">
                                 <rect key="frame" x="10" y="636" width="355" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🏎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1i-DT-cO1">
+                                <rect key="frame" x="62" y="64" width="250" height="274.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="230"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="W1i-DT-cO1" firstAttribute="top" secondItem="DIN-kd-xcj" secondAttribute="top" constant="20" id="Au7-76-e6d"/>
+                            <constraint firstItem="W1i-DT-cO1" firstAttribute="top" secondItem="DIN-kd-xcj" secondAttribute="top" id="Au7-76-e6d"/>
                             <constraint firstItem="abe-1F-b3S" firstAttribute="leading" secondItem="DIN-kd-xcj" secondAttribute="leading" constant="10" id="ETH-wB-8V2"/>
-                            <constraint firstItem="W1i-DT-cO1" firstAttribute="centerX" secondItem="tQD-Rk-TrS" secondAttribute="centerX" id="KHj-uL-EB6"/>
+                            <constraint firstItem="W1i-DT-cO1" firstAttribute="centerX" secondItem="tQD-Rk-TrS" secondAttribute="centerX" constant="-0.5" id="KHj-uL-EB6"/>
                             <constraint firstItem="DIN-kd-xcj" firstAttribute="bottom" secondItem="abe-1F-b3S" secondAttribute="bottom" constant="10" id="NYu-Mu-KCm"/>
                             <constraint firstItem="DIN-kd-xcj" firstAttribute="trailing" secondItem="abe-1F-b3S" secondAttribute="trailing" constant="10" id="Pso-WT-kLt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DIN-kd-xcj"/>
                     </view>
+                    <connections>
+                        <outlet property="emojiDefLabel" destination="abe-1F-b3S" id="Bk9-Pm-0M8"/>
+                        <outlet property="emojiLabel" destination="W1i-DT-cO1" id="5u4-pF-oNJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVx-UD-NkT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
